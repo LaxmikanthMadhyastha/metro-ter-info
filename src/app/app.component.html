@@ -1,0 +1,17 @@
+<div id="cover">
+  <form method="get" action="">
+    <div class="tb">
+      <div class="td"><input type="text" #searchValue placeholder="Search" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit" (click)="search(searchValue.value)">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<div *ngFor="let result of results">
+  {{result.fields.bus_route}}
+  {{result.fields.via}}
+    </div>
